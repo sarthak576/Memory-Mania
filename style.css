@@ -153,7 +153,10 @@ p {
   background: rgb(230, 163, 38);
 }
 
-@media screen and (max-width: 700px) {
+/* responsive */
+@media only screen and (min-width: 960px) {
+  .wrapper {
+  }
   .cards {
     height: 350px;
     width: 350px;
@@ -162,10 +165,41 @@ p {
     max-width: 69px;
   }
   .card .back-view img {
-    max-width: 40px;
+    max-width: 50px;
   }
 }
+
 @media screen and (max-width: 530px) {
+  .cards {
+    height: 300px;
+    width: 300px;
+  }
+  .card .front-view img {
+    max-width: 59px;
+  }
+  .card .back-view img {
+    max-width: 35px;
+  }
+  .details {
+    margin-top: 10px;
+    padding: 0 15px;
+    height: calc(25% - 20px);
+  }
+  .details p {
+    height: 15px;
+    font-size: 17px;
+    padding-right: 13px;
+  }
+  .details button {
+    font-size: 13px;
+    padding: 5px 10px;
+    border: none;
+    color: #fff;
+    background: rgb(230, 163, 38);
+  }
+}
+
+@media screen and (max-width: 340px) {
   .cards {
     height: 300px;
     width: 300px;

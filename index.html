@@ -6,11 +6,11 @@
     <link rel="icon" type="image/png" href="./images/logo-2.png" />
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style.css.map" />
     <meta
       name="description"
       content="Challenge your memory skills with Memori-Mania! Try to match all pairs with at most 15 flips. Play now and see if you can beat the clock!"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <div class="wrapper">
@@ -113,7 +113,7 @@
         </li>
         <div class="details">
           <p class="time">
-            Time: <span><b>40</b>s</span>
+            Time: <span><b>30</b>s</span>
           </p>
           <p class="flips">
             Flips: <span><b>0</b></span>
@@ -121,6 +121,11 @@
           <button>Refresh</button>
         </div>
       </ul>
+      <audio autoplay>
+        <source src="./songs/chinese.mp3" type="audio/mp3" />
+        <!-- <source src="chinese.mp3" type="audio/mpeg" /> -->
+        Your browser does not support the audio element.
+      </audio>
     </div>
 
     <script src="script.js"></script>
