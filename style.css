@@ -153,10 +153,14 @@ p {
   background: rgb(230, 163, 38);
 }
 
+<<<<<<< HEAD
 /* responsive */
 @media only screen and (min-width: 960px) {
   .wrapper {
   }
+=======
+@media screen and (max-width: 700px) {
+>>>>>>> 8828aea43752c1088e285be3fd52f90ac348ed0b
   .cards {
     height: 350px;
     width: 350px;
@@ -165,10 +169,16 @@ p {
     max-width: 69px;
   }
   .card .back-view img {
+<<<<<<< HEAD
     max-width: 50px;
   }
 }
 
+=======
+    max-width: 40px;
+  }
+}
+>>>>>>> 8828aea43752c1088e285be3fd52f90ac348ed0b
 @media screen and (max-width: 530px) {
   .cards {
     height: 300px;
@@ -199,6 +209,7 @@ p {
   }
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 340px) {
   .cards {
     height: 300px;
@@ -229,4 +240,6 @@ p {
   }
 }
 
+=======
+>>>>>>> 8828aea43752c1088e285be3fd52f90ac348ed0b
 /*# sourceMappingURL=style.css.map */
