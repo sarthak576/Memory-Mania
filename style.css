@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -11,19 +12,13 @@ p {
 }
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: brown;
+  background-color: brown;
 }
 
-/* ::selection {
-  color: #fff;
-  background: brown;
-} */
-
 .wrapper {
+  align-items: center;
+  justify-content: center;
+  position: relative;
   padding: 25px;
   background: rgba(24, 23, 23, 0.691);
   border-radius: 10px;
@@ -99,8 +94,9 @@ p {
   transform: rotateY(-180deg);
 }
 
-.card .back-view img {
-  max-width: 60px;
+.card .back-view,
+img {
+  max-width: 70px;
 }
 
 .card.flip .front-view {
@@ -153,14 +149,86 @@ p {
   background: rgb(230, 163, 38);
 }
 
-<<<<<<< HEAD
-/* responsive */
-@media only screen and (min-width: 960px) {
-  .wrapper {
-  }
-=======
-@media screen and (max-width: 700px) {
->>>>>>> 8828aea43752c1088e285be3fd52f90ac348ed0b
+.container {
+  min-height: 100vh;
+  margin: 100px 0px 0px 350px;
+  padding: 100px;
+  align-items: center;
+  justify-content: center;
+  /* top right bottom left  */
+}
+
+.heading {
+  border: 2px solid rgb(239, 239, 233);
+  background-color: rgb(230, 163, 38);
+  padding-left: 50px;
+}
+
+/* gaming font  */
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+
+/*  testing responsiveness */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". container container"
+    ". container container";
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". heading ."
+    ". wrapper ."
+    ". . .";
+  grid-area: container;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". cards ."
+    ". . .";
+  grid-area: wrapper;
+}
+
+.cards {
+  grid-area: cards;
+}
+
+.heading {
+  grid-area: heading;
+}
+
+html,
+body,
+.container {
+  height: 100%;
+  margin: 0;
+}
+
+/* ---------------- ----- laptops / pc / generally 960px          ---------------------- ---- */
+/* @media only screen and (max-width: 960px) { */
+/* @media only screen and (max-width: 1023px) and (min-width: 768px) {
   .cards {
     height: 350px;
     width: 350px;
@@ -169,77 +237,6 @@ p {
     max-width: 69px;
   }
   .card .back-view img {
-<<<<<<< HEAD
     max-width: 50px;
   }
-}
-
-=======
-    max-width: 40px;
-  }
-}
->>>>>>> 8828aea43752c1088e285be3fd52f90ac348ed0b
-@media screen and (max-width: 530px) {
-  .cards {
-    height: 300px;
-    width: 300px;
-  }
-  .card .front-view img {
-    max-width: 59px;
-  }
-  .card .back-view img {
-    max-width: 35px;
-  }
-  .details {
-    margin-top: 10px;
-    padding: 0 15px;
-    height: calc(25% - 20px);
-  }
-  .details p {
-    height: 15px;
-    font-size: 17px;
-    padding-right: 13px;
-  }
-  .details button {
-    font-size: 13px;
-    padding: 5px 10px;
-    border: none;
-    color: #fff;
-    background: rgb(230, 163, 38);
-  }
-}
-
-<<<<<<< HEAD
-@media screen and (max-width: 340px) {
-  .cards {
-    height: 300px;
-    width: 300px;
-  }
-  .card .front-view img {
-    max-width: 59px;
-  }
-  .card .back-view img {
-    max-width: 35px;
-  }
-  .details {
-    margin-top: 10px;
-    padding: 0 15px;
-    height: calc(25% - 20px);
-  }
-  .details p {
-    height: 15px;
-    font-size: 17px;
-    padding-right: 13px;
-  }
-  .details button {
-    font-size: 13px;
-    padding: 5px 10px;
-    border: none;
-    color: #fff;
-    background: rgb(230, 163, 38);
-  }
-}
-
-=======
->>>>>>> 8828aea43752c1088e285be3fd52f90ac348ed0b
-/*# sourceMappingURL=style.css.map */
+} */
