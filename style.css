@@ -225,18 +225,3 @@ body,
   height: 100%;
   margin: 0;
 }
-
-/* ---------------- ----- laptops / pc / generally 960px          ---------------------- ---- */
-/* @media only screen and (max-width: 960px) { */
-/* @media only screen and (max-width: 1023px) and (min-width: 768px) {
-  .cards {
-    height: 350px;
-    width: 350px;
-  }
-  .card .front-view img {
-    max-width: 69px;
-  }
-  .card .back-view img {
-    max-width: 50px;
-  }
-} */
