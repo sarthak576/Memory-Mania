@@ -3,7 +3,7 @@ const cards = document.querySelectorAll(".card"),
   flipsTag = document.querySelector(".flips b"),
   refreshBtn = document.querySelector(".details button");
 
-let maxTime = 30;
+let maxTime = 20;
 let timeLeft = maxTime;
 let flips = 0;
 let matchedCard = 0;
@@ -93,8 +93,9 @@ refreshBtn.addEventListener("click", shuffleCard);
 cards.forEach((card) => {
   card.addEventListener("click", flipCard);
 });
+
 // --------------- volume controls ----------------
-var audio = document.getElementById("myaudio");
+const audio = document.getElementById("myaudio");
 audio.volume = 0.5;
 // ---------------    auto - play    --------------------
-var x = document.getElementById("myaudio").autoplay;
+const x = document.getElementById("myaudio").autoplay;
