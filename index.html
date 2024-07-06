@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>MemoryGame-V3.0.2</title>
+    <title>MemoryGame-V3.0.3</title>
     <link rel="icon" type="image/png" href="./images/logo-2.png" />
 
     <link rel="stylesheet" href="style.css" />
@@ -128,11 +128,26 @@
         </ul>
       </div>
       <div class="music">
-        <audio autoplay>
-          <source src="./songs/chinese.mp3" type="audio/mp3" id="myaudio" />
+        <audio id="playAudio">
+          <source src="./songs/chinese.mp3" type="audio/mp3" />
           Your browser does not support the audio element.
         </audio>
       </div>
+
+      <button id="playButton">Play Music</button>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          document
+            .getElementById("playButton")
+            .addEventListener("click", function () {
+              var audio = document.getElementById("playAudio");
+              if (audio) {
+                audio.play();
+              }
+            });
+        });
+      </script>
     </div>
 
     <script src="script.js"></script>

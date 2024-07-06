@@ -95,7 +95,15 @@ cards.forEach((card) => {
 });
 
 // --------------- volume controls ----------------
-const audio = document.getElementById("myaudio");
-audio.volume = 0.5;
+// const audios = document.getElementById("myaudio");
+// audio.volume = 0.5;
 // ---------------    auto - play    --------------------
-const x = document.getElementById("myaudio").autoplay;
+// const x = document.getElementById("myaudio").autoplay;
+// iframe or original audio
+var isChrome =
+  /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+if (!isChrome) {
+  $("#iframeAudio").remove();
+} else {
+  $("#playAudio").remove(); // just to make sure that it will not have 2x audio in the background
+}
